@@ -49,4 +49,10 @@ $(document).ready(function() {
     prettify_enabled: false
   });
 
+  //keep aspect ratio of slider image's height to width as 4:3
+  $(".uk-slider li a img").each(function() {
+    $(this).css({ height: $(this).width() * 4 / 3 });
+    // $(this).css({ height: $(this).width() * 9 / 16 });
+  });
+
 });

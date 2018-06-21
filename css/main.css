@@ -171,7 +171,8 @@ input.bg_white[type=radio]:checked:before, .bg_white>input[type=radio]:checked:b
 ol, ul {padding-left: 1em;}
 ul.listNoStyle {padding: 0; list-style: none;}
 ul.list_horizontal {display: block; list-style: none; margin: 2px 0; padding: 0;}
-ul.list_horizontal>li {display: inline-block; float: none; margin: 0; padding: 2px 0;}
+ul.list_horizontal>li {display: inline-block; float: none; margin: 0; margin-left: -4px;}
+ul.list_horizontal li a {padding: 0 2px;}
 ul.list_horizontal li a:hover {text-decoration: none;}
 ol:not(.listDecimalRow) li, ol.listDecimal>li {margin-bottom: 10px;}
 ol.listDecimalRow {list-style-type: none; counter-reset: listDecimalRowCounter; padding: 0;}
@@ -183,7 +184,7 @@ ol.listDecimalCh {list-style-type:cjk-ideographic;}
 .list_striped>li:nth-of-type(odd) {background: #fafafa;}
 .listDecimal {list-style-type: none; counter-reset: listDecimalCounter; padding: 0;}
 .listDecimal>li:before {display:block; counter-increment: listDecimalCounter; content: counter(listDecimalCounter) ". ";}
-.list_line>li:not(:last-child):after {content: "│"; padding:0 10px;}
+.list_line>li:not(:last-child):after {content: "│"; padding:0 2px;}
 .listFaIcon_indent {padding-left: 1.25rem; text-indent: -0.8rem;}
 .listFaIcon_indent2 {padding-left: 2rem; text-indent: -2rem;}
 .listFaIcon_indent3 {padding-left: 3rem; text-indent: -3rem;}
@@ -423,6 +424,16 @@ img[src=""] {display: none;}
 /* End Pre Style
 ---------------------------------------------------- */
 
+/* Bootstrap 4 Style
+---------------------------------------------------- */
+.btn{
+    white-space:normal !important;
+    word-wrap: break-word;
+}
+
+/* End Bootstrap 4 Style
+---------------------------------------------------- */
+
 /* Uikit Style
 ---------------------------------------------------- */
 [class*=uk-margin]:last-child {margin-bottom: 0}
@@ -605,6 +616,9 @@ input:not([type]).uk-form-large, input[type].uk-form-large, select.uk-form-large
     border: 1px solid #E5E5E5;
     border-radius: 4px 4px 0 0;
     border-bottom: 0;
+}
+.uk-slider li>.border2>.uk-panel {
+    padding: 1px;
 }
 /* End Uikit Style
 ---------------------------------------------------- */
@@ -915,6 +929,7 @@ textarea {min-height: 100px;}
 }
 
 @media (min-width:960px) {
+.list_line>li:not(:last-child):after {padding:0 10px;}
 .uk-modal-dialog {
     min-width: 800px;
 }
