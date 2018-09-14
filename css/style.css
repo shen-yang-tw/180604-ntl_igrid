@@ -7,14 +7,13 @@ a.color_secondary:hover, a.color_secondary:hover *, .color_secondary a:hover {co
 .bg_hover_white_color_primary:focus, .bg_hover_white_color_primary:hover {color: #0096e0 !important; background-color: white;}
 .bg_primary, .btn_primary, .hover_bg_primary:hover, ul.hover_bg_primary>li>a:focus, ul.hover_bg_primary>li>a:hover, .uk-block-primary, .uk-pagination>li.uk-active span {color: white !important;background-color: #0096e0 !important;}
 .bg_secondary, .btn_secondary, .hover_bg_secondary:hover, nav.bg_secondary .uk-dropdown a, ul.hover_bg_secondary>li>a:focus, ul.hover_bg_secondary>li>a:hover, .uk-block-secondary {color: white !important;background-color: #00b3ad !important;}
-.btn_primary:focus, .btn_primary:hover, .btn_primary.selected {text-decoration: none; background-color: #0389cc !important;}
-.btn_secondary:focus, .btn_secondary:hover {background-color: #00a29d !important;}
-.border_secondary {border-color: #00b3ad}
+.btn_primary:focus, .btn_primary:hover, .btn_primary.uk-active, .btn_primary.selected {text-decoration: none; background-color: #0389cc !important;}
+.btn_secondary:focus, .btn_secondary:hover, .btn_secondary.uk-active{background-color: #00a29d !important;}
+.border_primary {border-color: #0096e0 !important;}
+.border_secondary {border-color: #00b3ad !important;}
 .fontsize li>a {color: #0096e0 !important; border: 1px solid #0096e0;}
 .fontsize li.uk-active>a, .fontsize li.uk-open>a, .fontsize li>a:focus, .fontsize li>a:hover {background: #0096e0 !important; border-color: #0096e0; color: white !important;}
 ol.listDecimalRow.badge>li:before {background: #0096e0;}
-.aspectRatio:before {/*width: 100px;*/ /* if width=0 then set custom width */}
-.aspectRatio.ratio_9_16:before {/*width: 100px;*/ /* if width=0 then set custom width */}
 .icon {width: 10em;}
 .icon:before {display: none; font-family: "Font Awesome 5 Solid"; content: "\f105";}
 .bg_img_gradient {
@@ -52,8 +51,8 @@ ol.listDecimalRow.badge>li:before {background: #0096e0;}
 .uk-nav-side ul a {
   color: #444;
 }
-.listTabs a:hover, .listTabs .uk-active a,
-.nav_side a:hover, .nav_side .uk-active a {
+.listTabs a:hover, .listTabs .uk-active>a,
+.nav_side a:hover, .nav_side .uk-active>a {
   color: white !important;
   background-color: #0096e0;
   text-decoration: none;
@@ -73,7 +72,7 @@ ol.listDecimalRow.badge>li:before {background: #0096e0;}
   border-bottom: 2px solid #dcdada;
 }
 .listTabs .uk-nav a {
-  color: #0096e0;
+  /* color: #0096e0; */
   padding: 5px 15px;
 }
 .listTabs .uk-nav>li.uk-open>a,
@@ -88,14 +87,22 @@ ol.listDecimalRow.badge>li:before {background: #0096e0;}
   background-color: transparent;
 }
 .listTabs .uk-nav li a:hover,
-.listTabs .uk-nav>li.uk-active>a,
+.listTabs .uk-nav>li.uk-active:not(.uk-open):not([aria-expanded="false"])>a,
+.listTabs .uk-nav>li:hover>a, .listTabs .uk-nav>li.uk-open:hover>a,
+.listTabs .uk-nav>li:hover>label, .listTabs .uk-nav>li.uk-open:hover>label, .listTabs .uk-nav>li.uk-open:hover>label+a,
 .listTabs .uk-nav>li[aria-expanded="true"] li[aria-expanded="true"]>a,
 .listTabs .uk-nav>li[aria-expanded="true"] li[aria-expanded="true"] li[aria-expanded="true"]>a,
 .listTabs .uk-nav>li[aria-expanded="true"] li[aria-expanded="true"] li[aria-expanded="false"]>a:hover,
 .listTabs .uk-nav>li[aria-expanded="true"] li[aria-expanded="false"] li>a:hover,
 .nav_side .uk-nav li a:hover, .nav_side .uk-nav>li.uk-active>a {
-  background: #0096e0;
+  background: #0096e0 !important;
   color: white !important;
+}
+.listTabs .uk-nav>li.uk-open>label {
+  color: white !important;
+}
+.listTabs .uk-nav li a:hover>label>input, .listTabs .uk-active>a>label>input, .listTabs .uk-nav>li.uk-open:hover>label>input {
+  border-color: white !important;
 }
 .listTabs .uk-nav>li.level3 li>a,
 .listTabs .uk-nav>li.level3[aria-expanded="true"] li[aria-expanded="true"]>a {
@@ -142,9 +149,6 @@ ol.listDecimalRow.badge>li:before {background: #0096e0;}
 .card_bgTop .padding_medium {
   margin-bottom: 95px;
 }
-#news.card_bgTop .padding_medium {
-  /*margin-bottom: 160px;*/
-}
 .truncating_striped h6.indent_remove {
   margin-top: -20px !important;
 }
@@ -185,6 +189,15 @@ ol.listDecimalRow.badge>li:before {background: #0096e0;}
 }
 .menuBar nav a {
     font-size: 1.2rem;
+}
+.menuBar .uk-dropdown-bottom {
+    margin-top: 0;
+    left: -1px !important;
+}
+.tag .edit {
+  min-height: auto;
+  line-height: normal;
+  padding: 0 5px;
 }
 footer, footer a {color: white !important;}
 

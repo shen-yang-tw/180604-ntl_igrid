@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW" xml:lang="zh-Hant">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="format-detection" content="telephone=no">
+  <!-- Hack phone number style for MS Edge -->
+  <meta name="designer&developer" content="楊軒羽 Shen Yang | Graphic Web Designer & Front End Developer | 前端視覺工程師">
+  <title>國立臺灣圖書館</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/uikit.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/accordion.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/dotnav.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/form-advanced.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/form-file.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/form-select.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/sticky.almost-flat.min.css">
+  <link rel="stylesheet" href="css/components/slider.min.css">
+  <link rel="stylesheet" href="css/components/slidenav.min.css">
+  <link rel="stylesheet" href="css/components/slideshow.min.css">
+  <link rel="stylesheet" href="css/components/tooltip.almost-flat.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/delay.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="top" class="bg_lightGrey index">
+  <div class="gotoTop uk-visible-small" data-uk-sticky="{top:-250, animation: 'uk-animation-slide-top'}"><a href="#top" title="Go to top"><i class="fas fa-chevron-up uk-margin-small-right"></i></a></div>
+  <header id="header" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}">
+    <div class="uk-position-relative">
+      <div class="bg_img uk-overlay-panel">
+        <div class="uk-cover-background" style="height: 180px; background-image: url(img/header.png);">
+          <img class="uk-invisible" src="img/blank.gif" alt="#" title="#">
+        </div>
+      </div>
+      <div class="uk-position-relative">
+        <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
+        <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
+          <ul class="topList list_horizontal list_line color_white uk-text-center">
+            <li><a class="hover_linkline" href="#" title="#">圖書館</a></li>
+            <li><a class="hover_linkline" href="#" title="#">首頁</a></li>
+            <li><a class="hover_linkline" href="#" title="#">English</a></li>
+            <li><a class="bg_hover_white_color_primary uk-border-rounded" href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle uk-margin-small-right"></i>登入</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="box_shadow3 uk-position-relative uk-padding-remove">
+        <div class="bg_secondary opacity90 uk-overlay-panel" style="background: linear-gradient(to bottom, #ffffff 0%, #00a59f 100%);"></div>
+        <div class="uk-container uk-container-center uk-width-xlarge-3-4">
+          <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
+            <div class="text_lC uk-width-4-5 uk-width-large-1-1 uk-padding-remove uk-vertical-align">
+              <div class="uk-width-1-1 uk-vertical-align-middle">
+                <a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.png"></a>
+              </div>
+            </div>
+            <div id="btn_canvas" class="uk-width-1-5 uk-vertical-align uk-text-right uk-hidden-large">
+              <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
+            </div>
+          </div>
+          <!-- #logoMenuBar -->
+          <div id="offcanvas" class="uk-offcanvas">
+            <nav class="uk-offcanvas-bar bg_primary">
+              <ul class="uk-nav uk-nav-offcanvas uk-text-contrast" data-uk-nav>
+                <li class="uk-parent">
+                  <a href="#">全部館藏</a>
+                  <ul class="uk-nav-sub">
+                    <li><a href="#">Item1</a></li>
+                    <li><a href="#">Item1</a></li>
+                  </ul>
+                </li>
+                <li class="uk-parent"><a href="#">期刊資料</a></li>
+                <li class="uk-parent"><a href="#">親子資料</a></li>
+                <li class="uk-parent"><a href="#">視聽資料</a></li>
+                <li class="uk-parent"><a href="#">臺灣資料</a></li>
+                <li class="uk-parent"><a href="#">微縮資料</a></li>
+                <li class="uk-parent"><a href="#">新書資訊</a></li>
+                <li class="uk-parent"><a href="#">熱門排行</a></li>
+                <li class="uk-parent"><a href="#">個人紀錄/續借</a></li>
+              </ul>
+            </nav>
+          </div>
+          <!-- #offcanvas -->
+        </div>
+        <hr class="border_white_opacity3 uk-margin-remove uk-position-relative">
+        <div class="menuBar uk-position-relative uk-width-1-1">
+          <nav class="nav_dropdown_center uk-text-center uk-text-contrast uk-visible-large">
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block active" href="#" title="#">全部館藏</a>
+              <div class="bg_transparent border_remove borderRadius0 uk-dropdown uk-dropdown-bottom uk-padding-remove">
+                <div class="padding_large uk-position-relative">
+                  <div class="bg_secondary uk-overlay-panel"></div>
+                  <ul class="uk-nav uk-nav-dropdown uk-text-contrast uk-text-left uk-position-relative uk-position-z-index">
+                    <li><a class="hover_bg_primary uk-dropdown-close" href="#" title="#"><i class="fas fa-angle-right uk-margin-small-right uk-margin-small-right"></i>Item1</a></li>
+                    <li><a class="hover_bg_primary uk-dropdown-close" href="#" title="#"><i class="fas fa-angle-right uk-margin-small-right uk-margin-small-right"></i>Item1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">期刊資料</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">親子資料</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">視聽資料</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">臺灣資料</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">微縮資料</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">新書資訊</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">熱門排行</a>
+            </div>
+            <div class="uk-button-dropdown" data-uk-dropdown>
+              <a class="fontSize09_2 padding_small paddingLR_medium uk-display-inline-block" href="#" title="#">個人紀錄/續借</a>
+            </div>
+          </nav>
+          <!-- .dropdownMenu_center -->
+        </div>
+      </div>
+      <!-- .borderB1 -->
+    </div>
+  </header>
+  <!-- header -->
+  <div class="uk-position-relative">
+    <div class="opacity10 uk-overlay-panel uk-cover-background" style="height: 600px; background-image: url(img/bg.jpg);">
+      <img class="uk-invisible" src="img/blank.gif" alt="">
+    </div>
+  </div>
+  <div class="mt-2 mt-md-4 uk-container uk-container-center">
+    <div class="uk-position-relative">
+      <ul class="uk-breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li class="uk-active"><span>全部館藏</span></li>
+      </ul>
+      <div class="uk-position-bottom-right"><a class="linkline mr-2" href="#">回上頁</a>| 帳號: <span class="account"><a class="linkline" href="#" title="#">a1234</a></span></div>
+    </div>
+  </div>
+  <div class="bg_img">
+    <div class="paddingB_xlarge uk-container uk-container-center">
+      <div class="box_shadow1 bg-white uk-panel uk-panel-box">
+        <div class="min_heightL600">
+          <div class="uk-grid uk-grid-large" data-uk-grid-margin>
+            <div class="uk-width-small-1-4 uk-width-medium-1-5 uk-width-large-1-6">
+              <img class="w-100 mb-3" src="https://fakeimg.pl/300x350/" alt="#">
+              <img class="w-100 mb-3" src="https://fakeimg.pl/350x350/?text=QRCode" alt="#">
+            </div>
+            <div class="uk-width-small-3-4 uk-width-medium-4-5 uk-width-large-5-6">
+              <div class="uk-margin">
+                <div class="uk-button-group">
+                  <button class="uk-button uk-button-small" data-uk-toggle="{target:'.toggle'}"><span class="toggle"><i class="fas fa-heart fa-fw"></i>收藏</span><span class="toggle uk-hidden"><i class="far fa-heart fa-fw"></i>取消收藏</span></button>
+                  <button class="uk-button" data-uk-modal="{target:'#save', center:true}"><i class="fas fa-save fa-fw"></i>儲存</button>
+                  <button class="uk-button" data-uk-modal="{target:'#print', center:true}"><i class="fas fa-print fa-fw"></i>列印</button>
+                  <button class="uk-button" data-uk-modal="{target:'#email', center:true}"><i class="fas fa-envelope fa-fw"></i>E-Mail</button>
+                </div>
+                <div class="uk-align-medium-right">
+                  <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-eye fa-fw"></i><span title="點閱">123</span></span>
+                  <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-heart fa-fw"></i><span title="收藏">123</span></span>
+                  <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-star fa-fw"></i><span title="評分">123</span></span>
+                  <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-comment-alt fa-fw"></i><span title="引用">123</span></span>
+                  <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-envelope fa-fw"></i><span title="轉寄">123</span></span>
+                </div>
+              </div>
+              <p class="urlFix my-2">資料來源 <a class="color_primary" href="#">Findbook</a></p>
+              <h4 class="p-2 my-2 bg-light text-dark">Python3.5技術手冊</h4>
+              <div class="rate mb-2">評分：
+                <span class="rateScore mr-2">0</span>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分1"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分2"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分3"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分4"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分5"><i class="fas fa-star fa-fw"></i></button>
+                <!-- <a class="cancelRate hover_color_primary text-black-50 p-1" href="#" title="取消評分"><i class="far fa-times-circle"></i></a>
+                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分1"><i class="fas fa-star fa-fw"></i></a>
+                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分2"><i class="fas fa-star fa-fw"></i></a>
+                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分3"><i class="fas fa-star fa-fw"></i></a>
+                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分4"><i class="fas fa-star fa-fw"></i></a>
+                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分5"><i class="fas fa-star fa-fw"></i></a> -->
+              </div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">作者</span><a class="color_primary" href="#">林信良 著</a></div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">出版</span><a class="color_primary" href="#">臺北市 : 碁峰資訊股份有限公司發行 2016.07</a></div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">版本</span>初版</div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">標題</span><a class="color_primary" href="#">Python(電腦程式語言)</a></div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">ISBN</span>9789864761265 (平裝)</div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">下載</span><a class="color_primary" href="#">範例下載</a></div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">書目註</span>含附錄</div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">系統號</span>000034888</div>
+              <div class="urlFix mb-2">
+                <div class="tag uk-flex uk-flex-wrap">
+                  <div>
+                    <span class="border border-secondary px-2 mr-2 mb-2">讀者標籤</span>
+                  </div>
+                  <div class="newTag mr-2 uk-hidden" data-uk-alert>
+                    <div class="mb-2 py-2 d-inline-block uk-alert">
+                      <a class="uk-alert-close uk-close" href="#" title="刪除"></a>
+                      <div class="editable d-inline-block uk-form">
+                        <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
+                        <label class="text_label mb-0 mr-2 d-inline-block" title="請點擊筆形按鈕輸入標籤"><a class="linkline" href="#">請點擊筆形按鈕輸入標籤</a></label>
+                        <input class="text_input" type="text" value="請點擊筆形按鈕輸入標籤">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mr-2" data-uk-alert>
+                    <div class="mb-2 py-2 d-inline-block uk-alert">
+                      <a class="uk-alert-close uk-close" href="#" title="刪除"></a>
+                      <div class="editable d-inline-block uk-form">
+                        <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
+                        <label class="text_label mb-0 mr-2 d-inline-block" title="請點擊筆形按鈕修改標籤"><a class="linkline" href="#">123</a></label>
+                        <input class="text_input" type="text" value="123">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <button id="btn_add" class="btn_primary uk-button" type="button" aria-label="新增標籤" title="新增標籤"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">連結</span><a class="color_primary" href="#">webpac.nhri.org.tw/webpac/detail/324045/?index=1</a></div>
+              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">目前引用數</span>1</div>
+            </div>
+          </div>
+          <div class="mt-4 p-0 uk-panel uk-panel-box uk-panel-box-secondary uk-accordion" data-uk-accordion="{showfirst: false}">
+            <div class="px-2 pt-2 pb-0">
+              <div class="mb-2 uk-panel uk-panel-box">
+                <div class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5" data-uk-grid-margin>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">館藏地</span>
+                    <span class="px-2 my-1 w-100">二樓中文圖書區</span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">索書號</span>
+                    <span class="px-2 my-1 w-100">312.32P97 8766 2016</span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">架位號</span>
+                    <span class="px-2 my-1 w-100"></span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">卷期</span>
+                    <span class="px-2 my-1 w-100"></span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">館藏狀態</span>
+                    <span class="px-2 my-1 w-100">洽館員調閱</span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">狀態／到期日</span>
+                    <span class="px-2 my-1 w-100">2019/01/02 23:59</span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">條碼號</span>
+                    <span class="px-2 my-1 w-100">39000000438809</span>
+                  </div>
+                  <div>
+                    <span class="bg-secondary text-white px-2 my-1 w-100">備註</span>
+                    <span class="px-2 my-1 w-100"></span>
+                  </div>
+                  <div>
+                    <span class="px-2 my-1 w-100"><button class="btn_primary w-100 uk-button" type="button">預約</button></span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-0 uk-accordion-content">
+                <div class="mb-2 uk-panel uk-panel-box">
+                  <div class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5" data-uk-grid-margin>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">館藏地</span>
+                      <span class="checkEmpty px-2 my-1 w-100">二樓中文圖書區</span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">索書號</span>
+                      <span class="checkEmpty px-2 my-1 w-100">312.32P97 8766 2016</span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">架位號</span>
+                      <span class="checkEmpty px-2 my-1 w-100"></span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">卷期</span>
+                      <span class="checkEmpty px-2 my-1 w-100"></span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">館藏狀態</span>
+                      <span class="checkEmpty px-2 my-1 w-100">洽館員調閱</span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">狀態／到期日</span>
+                      <span class="checkEmpty px-2 my-1 w-100">2019/01/02 23:59</span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">條碼號</span>
+                      <span class="checkEmpty px-2 my-1 w-100">39000000438809</span>
+                    </div>
+                    <div>
+                      <span class="bg-secondary text-white px-2 my-1 w-100">備註</span>
+                      <span class="checkEmpty px-2 my-1 w-100"></span>
+                    </div>
+                    <div>
+                      <span class="px-2 my-1 w-100"><button class="btn_primary w-100 uk-button" type="button">預約</button></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center border-0 rounded-0 uk-accordion-title uk-hidden"><i class="uk-icon-chevron-down"></i></div>
+          </div>
+          <div class="uk-margin-large">
+            <h4>相關作品</h4>
+            <ul class="uk-tab" data-uk-tab="{connect:'#books'}">
+              <li class="uk-active"><a href="#">Tab1</a></li>
+              <li><a href="#">Tab2</a></li>
+            </ul>
+            <ul id="books" class="uk-switcher uk-margin">
+              <li>
+                <ul class="ratio4_3 uk-grid uk-grid-small uk-grid-width-small-1-4 uk-grid-width-medium-1-5 uk-grid-width-xlarge-1-6" data-uk-grid-margin>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢的Python : 淸晰、簡潔、有效的程式設計</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢的Python : 淸晰、簡潔、有效的程式設計</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢的Python : 淸晰、簡潔、有效的程式設計</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢的Python : 淸晰、簡潔、有效的程式設計</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢的Python : 淸晰、簡潔、有效的程式設計</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <ul class="ratio4_3 uk-grid uk-grid-small uk-grid-width-small-1-4 uk-grid-width-medium-1-5 uk-grid-width-xlarge-1-6" data-uk-grid-margin>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="w-100 uk-thumbnail" href="#">
+                      <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+                      <div class="uk-thumbnail-caption uk-text-truncate">流暢</div>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="uk-margin-large">
+            <ul class="uk-tab" data-uk-tab="{connect:'#switcher'}">
+              <li class="uk-active"><a href="#">內容</a></li>
+              <li><a href="#">評論</a></li>
+            </ul>
+            <ul id="switcher" class="uk-switcher uk-margin">
+              <li>
+                <h5>摘要註</h5>
+                <p class="urlFix">作者自PyCon Taiwan 2013以來實行多次Python入門課程，匯整學員在課程中遇到的觀念、實作、應用等問題之經驗集成。基於Python 3.5而撰寫，涵蓋Python
+                  3.0至3.5的實用特性。必要時從Python標準程式庫的原始碼分析與探討，了解各種語法在標準程式庫中如何應用。涵蓋abc、collection.abc、datetime、pdb、unittest、timeit、threading、subprocess、multiprocessing等標準程式庫之實用模組。對於描述器、裝飾器、meta類別實作等進階主題詳細探討，並以標準程式庫中@staticmethod、@abstractmethod等功能之模仿，作為實際之應用對象。建議動手實作的範例提供Lab檔案，更能掌握練習重點。</p>
+                <p class="urlFix"><span class="border border-secondary px-2 mr-2">摘要出處</span><a class="color_primary" href="#">博客來</a></p>
+                <h5>網路書店</h5>
+                <p class="urlFix">涵蓋Python 3.0至3.5實用特性 - 詳述函式、模組、類別與套件管理 - 深入探討常用模組之應用與實作 - 包含裝飾器、meta類別實作等進階主題 ‧作者自PyCon Taiwan 2013以來實行多次Python入門課程，匯整學員在課程中遇到的觀念、實作、應用等問題之經驗集成。 ‧基於Python 3.5而撰寫，涵蓋Python 3.0至3.5的實用特性。
+                  ‧必要時從Python標準程式庫的原始碼分析與探討，了解各種語法在標準程式庫中如何應用。 ‧涵蓋abc、collection.abc、datetime、pdb、unittest、timeit、threading、subprocess、multiprocessing等標準程式庫之實用模組。
+                  ‧對於描述器、裝飾器、meta類別實作等進階主題詳細探討，並以標準程式庫中@staticmethod、@abstractmethod等功能之模仿，作為實際之應用對象。 ‧建議動手實作的範例提供Lab檔案，更能掌握練習重點。</p>
+                <p class="urlFix"><span class="border border-secondary px-2 mr-2">資料來源</span><a class="color_primary" href="#">Findbook</a></p>
+                <hr>
+                <p class="urlFix"><span class="mr-2">延伸查詢</span><span class="commaCH"><a class="color_primary" href="#">Findbook</a></span><span class="commaCH"><a class="color_primary" href="#">Google Books</a></span></p>
+              </li>
+              <li>
+                <form class="uk-form">
+                  <textarea id="comment" class="w-100 mb-2" cols="30" rows="5" placeholder="請輸入評論"></textarea>
+                  <button class="btn_comment btn_primary uk-button" type="button"><i class="mr-1 fas fa-pen-fancy"></i>儲存評論</button>
+                </form>
+                <div class="editable d-inline-block uk-form">
+                  <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
+                  <div class="text_area" title="請點擊筆形按鈕輸入標籤">請點擊筆形按鈕輸入標籤</div>
+                  <input class="text_input" type="text" value="請點擊筆形按鈕輸入標籤">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .uk-container -->
+  </div>
+  <!-- .bg_img -->
+  <footer class="uk-position-relative">
+    <div class="bg_darkestGrey opacity90 uk-overlay-panel uk-padding-remove"></div>
+    <div class="uk-container uk-container-center uk-position-relative paddingT_large paddingB_large">
+      <ul class="uk-grid uk-grid-small uk-text-center" data-uk-grid-margin>
+        <li class="uk-width-medium-1-2 uk-width-large-1-3"><i class="fas fa-phone uk-margin-small-right uk-margin-small-right"></i>02-2926-6888</li>
+        <li class="uk-width-medium-1-2 uk-width-large-1-3"><i class="fas fa-envelope uk-margin-small-right uk-margin-small-right"></i><a href="mailto:user@mail.ntl.edu.tw" title="user@mail.ntl.edu.tw">user@mail.ntl.edu.tw</a></li>
+        <li class="uk-width-medium-1-2 uk-width-large-1-3"><i class="far fa-building uk-margin-small-right uk-margin-small-right"></i>23574 新北市中和區中安街八十五號</li>
+        <li class="uk-width-medium-1-2 uk-width-large-1-1"><span class="uk-text-small">國立臺灣圖書館 © <span class="year"></span> All Rights Reserved</span>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- footer -->
+  <div id="save" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a href="" class="uk-modal-close uk-close"></a>
+      <div class="uk-modal-header">
+        <h2>儲存</h2>
+      </div>
+      <form class="uk-form uk-form-horizontal uk-container">
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="id_type">格　　式</label>
+          <div class="uk-form-controls">
+            <select id="id_type" class="uk-form-large uk-width-responsive" name="type">
+              <option value="simple" selected="selected">簡目</option>
+              <option value="adv">詳目</option>
+              <option value="endnote">EndNote</option>
+              <option value="refworks">RefWorks</option>
+            </select>
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="id_type">資料類型</label>
+          <div class="uk-form-controls">
+            <select id="id_format" class="uk-form-large uk-width-responsive" name="format">
+              <option value="csv" selected="selected">CSV</option>
+              <option value="excel" selected="selected">Excel</option>
+              <option value="html" selected="selected">HTML</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div class="uk-modal-footer">
+        <div class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+          <div><button class="btn_primary uk-button uk-button-large uk-width-responsive">送出</button></div>
+          <div><button class="btn_secondary uk-button uk-button-large uk-width-responsive uk-modal-close">取消</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #save -->
+  <div id="print" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a href="" class="uk-modal-close uk-close"></a>
+      <div class="uk-modal-header">
+        <h2>列印</h2>
+      </div>
+      <form class="py-md-5 uk-form uk-form-horizontal uk-container">
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="id_type">格　　式</label>
+          <div class="uk-form-controls">
+            <select id="id_type" class="uk-form-large uk-width-responsive" name="type">
+              <option value="simple" selected="selected">簡目</option>
+              <option value="adv">詳目</option>
+              <option value="endnote">EndNote</option>
+              <option value="refworks">RefWorks</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div class="uk-modal-footer">
+        <div class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+          <div><button class="btn_primary uk-button uk-button-large uk-width-responsive">送出</button></div>
+          <div><button class="btn_secondary uk-button uk-button-large uk-width-responsive uk-modal-close">取消</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #print -->
+  <div id="email" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a href="" class="uk-modal-close uk-close"></a>
+      <div class="uk-modal-header">
+        <h2>電子信箱</h2>
+      </div>
+      <form class="uk-form uk-form-horizontal uk-container">
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="id_type">格　　式</label>
+          <div class="uk-form-controls">
+            <select id="id_type" class="uk-form-large uk-width-responsive" name="type">
+              <option value="simple" selected="selected">簡目</option>
+              <option value="adv">詳目</option>
+              <option value="endnote">EndNote</option>
+              <option value="refworks">RefWorks</option>
+            </select>
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="id_mail">收件者</label>
+          <div class="uk-form-controls">
+            <input id="id_mail" name="mail" class="uk-form-large uk-width-responsive" type="text" placeholder="請輸入Email">
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="id_title">主旨</label>
+          <div class="uk-form-controls">
+            <input id="id_mail" name="title" class="uk-form-large uk-width-responsive" type="text" placeholder="">
+          </div>
+        </div>
+      </form>
+      <div class="uk-modal-footer">
+        <div class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+          <div><button class="btn_primary uk-button uk-button-large uk-width-responsive">送出</button></div>
+          <div><button class="btn_secondary uk-button uk-button-large uk-width-responsive uk-modal-close">取消</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- #email -->
+  <div id="login" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a href="" class="uk-modal-close uk-close"></a>
+      <form class="uk-form uk-container">
+        <h1 class="uk-text-center">會員登入</h1>
+        <div class="uk-form-row">
+          <input class="uk-form-large uk-width-responsive" type="text" placeholder="請輸入個人信箱">
+        </div>
+        <div class="uk-form-row">
+          <input class="uk-form-large uk-width-responsive" type="text" placeholder="請輸入6-15碼英數混合密碼">
+          <p class="uk-form-help-block uk-text-small">英文字母需區分大小寫</p>
+        </div>
+        <div class="uk-form-row">
+          <div class="uk-grid uk-grid-small uk-grid-width-small-1-2">
+            <div class="captcha_input uk-margin-small-bottom">
+              <input class="uk-form-large uk-width-responsive" type="text" placeholder="請輸入圖形6碼數字">
+            </div>
+            <div class="Captcha_code"><img class="uk-margin-small-bottom" src="http://fakeimg.pl/150x40/"></div>
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label>
+            <input class="uk-margin-small-right" type="checkbox">記住我的帳號</label>
+        </div>
+        <div class="uk-form-row">
+          <a class="btn_primary uk-button uk-button-large uk-width-responsive" href="#" title="登入">登　　入</a>
+        </div>
+        <div class="uk-form-row uk-text-center">
+          <a class="uk-display-inline-block uk-margin-small-left uk-margin-small-right uk-margin-bottom" href="#register" title="會員註冊" data-uk-modal="{center:true}">會員註冊</a>
+          <a class="uk-display-inline-block uk-margin-small-left uk-margin-small-right uk-margin-bottom" href="#" title="忘記密碼">忘記密碼</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- #login -->
+  <div id="register" class="uk-modal">
+    <div class="uk-modal-dialog">
+      <a href="" class="uk-modal-close uk-close"></a>
+      <h1 class="uk-text-center">會員註冊</h1>
+      <form class="uk-form uk-form-horizontal uk-container">
+        <div class="uk-form-row">
+          <span class="uk-form-label">性別</span>
+          <div class="uk-form-controls uk-form-controls-text">
+            <label>
+              <input class="uk-margin-small-right" type="radio" name="group1" checked>男</label>
+            <label>
+              <input class="uk-margin-small-right" type="radio" name="group1">女</label>
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <span class="uk-form-label">教育程度</span>
+          <div class="uk-form-controls uk-form-controls-text">
+            <label>
+              <input class="uk-margin-small-right" type="radio" name="group2" checked>國中以下</label>
+            <label>
+              <input class="uk-margin-small-right" type="radio" name="group2">高中職</label>
+            <label>
+              <input class="uk-margin-small-right" type="radio" name="group2">大學大專</label>
+            <label>
+              <input class="uk-margin-small-right" type="radio" name="group2">研究所以上</label>
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="form_name">姓名</label>
+          <div class="uk-form-controls">
+            <input id="form_name" class="uk-form-large uk-width-responsive" type="text" placeholder="請填寫真實中文姓名">
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="form_birth">生日</label>
+          <div class="uk-form-controls">
+            <div id="form_birth" class="uk-grid uk-grid-small uk-grid-width-1-3">
+              <div>
+                <select id="form_birth_y" class="uk-form-large uk-width-responsive">
+                  <option>年</option>
+                </select>
+              </div>
+              <div>
+                <select id="form_birth_m" class="uk-form-large uk-width-responsive">
+                  <option>月</option>
+                </select>
+              </div>
+              <div>
+                <select id="form_birth_d" class="uk-form-large uk-width-responsive">
+                  <option>日</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="form_email">E-mail</label>
+          <div class="uk-form-controls">
+            <input id="form_email" class="uk-form-large uk-width-responsive" type="text" placeholder="請填寫有效的E-mail">
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="form_password">設定密碼</label>
+          <div class="uk-form-controls">
+            <input id="form_password" class="uk-form-large uk-width-responsive" type="text" placeholder="請設定6-15位英數字混合密碼，英文需區分大小寫">
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <label class="uk-form-label" for="form_confirm">確認密碼</label>
+          <div class="uk-form-controls">
+            <input id="form_confirm" class="uk-form-large uk-width-responsive" type="text" placeholder="請再輸入一次密碼">
+          </div>
+        </div>
+        <div class="uk-form-row">
+          <a class="btn_primary uk-button uk-button-large uk-width-responsive" href="#" title="註冊">註　　冊</a>
+          <label class="uk-margin-small-top uk-margin-small-right" for="form_agree">
+            <input class="uk-margin-small-right" type="checkbox" id="form_agree">我同意飛資得系統科技資料庫<a href="#" title="客戶隱私權政策">客戶隱私權政策</a>與<a href="#" title="客戶服務條款">客戶服務條款</a></label>
+          <a class="uk-display-inline-block uk-margin-small-left uk-margin-small-right uk-margin-small-top uk-margin-bottom uk-align-right" href="#login" title="返回登入" data-uk-modal="{center:true}">返回登入</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- #register -->
+  <script src="js/jquery-3.2.1.min.js "></script>
+  <script src="js/bootstrap.bundle.min.js "></script>
+  <script src="js/uikit.min.js "></script>
+  <script src="js/core/alert.min.js "></script>
+  <script src="js/core/button.min.js "></script>
+  <script src="js/core/scrollspy.min.js "></script>
+  <script src="js/core/smooth-scroll.min.js "></script>
+  <script src="js/core/dropdown.min.js"></script>
+  <script src="js/core/modal.min.js"></script>
+  <script src="js/core/tab.min.js"></script>
+  <script src="js/core/toggle.min.js"></script>
+  <script src="js/components/accordion.min.js"></script>
+  <script src="js/components/form-select.min.js"></script>
+  <script src="js/components/grid.min.js"></script>
+  <script src="js/components/lightbox.min.js"></script>
+  <script src="js/components/sticky.min.js"></script>
+  <script src="js/components/slider.min.js "></script>
+  <script src="js/components/slideset.min.js "></script>
+  <script src="js/components/slideshow.min.js "></script>
+  <script src="js/components/slideshow-fx.min.js "></script>
+  <script src="js/components/tooltip.min.js "></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+  <script src="js/ion.rangeSlider.js"></script>
+  <script src="js/mobile-chrome-vh-fix.js"></script>
+  <script src="js/easy-editable-text.js"></script>
+  <script src="js/script.js "></script>
+</body>
+
+</html>

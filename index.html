@@ -21,8 +21,8 @@
   <link rel="stylesheet" href="css/components/slidenav.min.css">
   <link rel="stylesheet" href="css/components/slideshow.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/ion.rangeSlider.css" />
-  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+  <link rel="stylesheet" href="css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/delay.css">
   <link rel="stylesheet" href="css/style.css">
@@ -54,19 +54,16 @@
         </nav>
       </div>
       <div class="box_shadow3 uk-position-relative uk-padding-remove">
-        <div class="bg_secondary opacity90 uk-overlay-panel"></div>
+        <div class="bg_secondary opacity90 uk-overlay-panel" style="background: linear-gradient(to bottom, #ffffff 0%, #00a59f 100%);"></div>
         <div class="uk-container uk-container-center uk-width-xlarge-3-4">
           <div id="logoMenuBar" class="marginTB_medium uk-position-relative uk-position-z-index uk-grid uk-grid-small" data-uk-grid-margin>
-            <div class="uk-width-4-5 uk-width-large-3-5 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle"><a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.png"></a></div>
+            <div class="text_lC uk-width-4-5 uk-width-large-1-1 uk-padding-remove uk-vertical-align">
+              <div class="uk-width-1-1 uk-vertical-align-middle">
+                <a class="logo paddingR_small uk-width-1-1 uk-margin-small-right" href="index.html"><img alt="logo" title="logo" src="img/logo.png"></a>
+              </div>
             </div>
             <div id="btn_canvas" class="uk-width-1-5 uk-vertical-align uk-text-right uk-hidden-large">
               <div class="uk-vertical-align-middle"><a href="#" aria-label="menu" aria-labelledby="#offcanvas" data-uk-offcanvas="{target:'#offcanvas', mode:'slide'}"><i class="uk-icon-bars uk-icon-medium color_white"></i></a></div>
-            </div>
-            <div class="uk-width-1-1 uk-width-large-2-5 uk-padding-remove uk-vertical-align">
-              <div class="uk-width-1-1 uk-vertical-align-middle">
-                <h2 class="text_center_lR uk-text-contrast uk-margin-remove"><span class="bg_white color_secondary padding_small">館藏查詢系統</span></h2>
-              </div>
             </div>
           </div>
           <!-- #logoMenuBar -->
@@ -141,161 +138,173 @@
   </header>
   <!-- header -->
   <div class="uk-position-relative">
-    <div class="opacity10 uk-overlay-panel uk-cover-background" style="height: 600px; background-image: url(img/bg.png);">
+    <div class="opacity10 uk-overlay-panel uk-cover-background" style="height: 600px; background-image: url(img/bg.jpg);">
       <img class="uk-invisible" src="img/blank.gif" alt="#" title="#">
     </div>
   </div>
-  <div class="paddingT_xlarge paddingB_xlarge uk-container uk-container-center">
-    <div class="uk-margin uk-position-relative">
-      <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-        <div class="uk-width-1-2 uk-width-large-1-4">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">多元文化資源區圖書暨視聽資料</button>
-        </div>
-        <div class="uk-width-1-2 uk-width-large-1-4">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Buku Multikultural dan Sumber daya Audio-Visual</button>
-        </div>
-        <div class="uk-width-1-2 uk-width-large-1-4">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">แหล่งข้อมูลหลากหลายวัฒนธรรมหนังสือเขตและสื่อโสตทัศน์</button>
-        </div>
-        <div class="uk-width-1-2 uk-width-large-1-4">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Tài nguyên đa văn hóa Sách giáo khoa và tài liệu nghe nhìn</button>
-        </div>
-        <div class="uk-width-1-2 uk-width-large-1-3">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">ယဉ်ကျေးမှုပေါင်းစုံအရင်းအမြစ်များခရိုင်စာကြည့်တိုက်-cum-အသံ-အမြင်အာရုံပစ္စည်းများ</button>
-        </div>
-        <div class="uk-width-1-2 uk-width-large-1-3">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Multicultural Resources Mga Aklat ng Mga Distrito at Mga Materyales sa Audio-visual</button>
-        </div>
-        <div class="uk-width-1-2 uk-width-large-1-3">
-          <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">ຊັບພະຍາກອນທໍາມະຊາດແລະວັດທະນະທໍາອື່ນໆ</button>
-        </div>
-      </div>
-    </div>
-    <div id="searchBar" class="bg_transparent border_black_opacity1 box_shadow1 uk-panel uk-panel-box">
-      <!-- <div id="searchBar" class="bg_transparent border_black_opacity1 box_shadow1 uk-panel uk-panel-box" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom', media: '(min-width: 960px)'}"> -->
-      <div class="bg_white opacity80 uk-border-rounded uk-overlay-panel"></div>
-      <div class="tabBar_switcher uk-position-relative">
-        <ul class="nav nav-tabs" id="tabBar" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" id="defaultSearch_tab" data-toggle="tab" href="#defaultSearch" role="tab" aria-controls="defaultSearch" aria-selected="true">簡易查詢</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="plusSearch_tab" data-toggle="tab" href="#plusSearch" role="tab" aria-controls="plusSearch" aria-selected="false">進階查詢</a>
-          </li>
-        </ul>
-        <div class="bg_white border border-top-0 p-2 tab-content" id="switcher">
-          <div class="tab-pane fade show active" id="defaultSearch" role="tabpanel" aria-labelledby="defaultSearch_tab">
-            <form class="uk-form">
-              <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-                <div class="uk-width-xlarge-5-6">
-                  <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-                    <div class="uk-width-small-3-10 uk-width-medium-2-10">
-                      <select class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" aria-labelledby="search">
-                        <option>不限欄位</option>
-                      </select>
-                    </div>
-                    <div class="uk-width-small-4-10 uk-width-medium-6-10">
-                      <input id="search" class="bg_whiteOpacity9 border_black_opacity1 uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
-                    </div>
-                    <div class="uk-width-small-3-10 uk-width-medium-2-10">
-                      <a href="#" class="btn_primary uk-padding-remove uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="uk-width-xlarge-1-6">
-                  <button type="button" class="btn_secondary uk-button uk-button-large uk-width-1-1">歷史</button>
-                </div>
-                <div class="uk-width-1-1">
-                  <div class="uk-form-controls">
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="match" checked>精確檢索</label>
-                    <label class="uk-margin-right">
-                      <input class="uk-margin-small-right" type="radio" name="match">模糊檢索</label>
-                  </div>
-                </div>
-              </div>
-              <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
-            </form>
-          </div>
-          <div class="tab-pane fade" id="plusSearch" role="tabpanel" aria-labelledby="plusSearch_tab">
-            <div class="uk-form">
-              <div id="search_option" class="uk-grid uk-grid-small" data-uk-grid-margin>
-                <div class="uk-width-medium-9-10 uk-margin-small-top uk-margin-small-bottom" data-uk-alert>
-                  <div class="uk-alert">
-                    <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-                      <div class="uk-width-medium-4-10">
-                        <input id="search" class="uk-form-large uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" type="text" placeholder="請輸入檢索詞">
-                      </div>
-                      <div class="uk-width-3-6 uk-width-medium-3-10">
-                        <select class="uk-form-large uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" aria-labelledby="search">
-                          <option value="不限欄位">不限欄位</option>
-                          <option value="資源名稱">資源名稱</option>
-                          <option value="資料庫平台/出版者">資料庫平台/出版者</option>
-                          <option value="資源主題">資源主題</option>
-                          <option value="ISSN/ISBN">ISSN/ISBN</option>
-                        </select>
-                      </div>
-                      <div class="option uk-width-2-6 uk-width-medium-2-10">
-                        <select class="uk-form-large uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" aria-labelledby="search">
-                          <option value="AND">AND</option>
-                          <option value="OR">OR</option>
-                          <option value="NOT">NOT</option>
-                        </select>
-                      </div>
-                      <div class="uk-width-1-6 uk-width-medium-1-10">
-                        <button class="btn_primary uk-button uk-button-large uk-padding-remove uk-alert-close uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" aria-label="Close"><i class="fas fa-times" data-fa-transform="grow-2"></i></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="uk-width-medium-1-10 uk-margin-small-top uk-margin-small-bottom">
-                  <button id="add" class="btn_secondary uk-button uk-button-large uk-width-1-1" aria-label="add"><i class="fas fa-plus" data-fa-transform="grow-2"></i></button>
-                </div>
-              </div>
-              <div class="uk-grid uk-grid-small" data-uk-grid-margin>
-                <div class="uk-width-1-1">
-                  <div class="uk-accordion uk-margin-bottom" data-uk-accordion="{showfirst: false, collapse: false}">
-                    <button class="btn_secondary uk-accordion-title uk-button uk-button-large uk-margin-remove">查詢篩選</button>
-                    <div class="bg_grey p-2 uk-accordion-content">
-                      <div class="paddingLR_xlarge uk-position-relative">
-                        <input type="text" id="range" name="range">
-                      </div>
-                      <div class="uk-form-controls uk-margin">
-                        <label class="uk-width-1-1 uk-width-medium-1-3" for="id_lang">語　　言
-                          <select id="id_lang" class="uk-width-1-1 uk-width-medium-2-3 uk-margin-right">
-                            <option selected="selected">全部</option>
-                          </select>
-                        </label>
-                        <label class="uk-width-1-1 uk-width-medium-1-3" for="id_type">資料類型
-                          <select id="id_type" class="uk-width-1-1 uk-width-medium-2-3 uk-margin-right">
-                            <option selected="selected">全部</option>
-                          </select>
-                        </label>
-                        <label class="uk-width-1-1 uk-width-medium-1-4" for="id_watch">
-                          <input id="id_watch" class="uk-margin-small-right" name="watch" type="checkbox">只查被收藏的書目</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="uk-width-1-2 uk-width-medium-1-4 uk-push-1-4"><a href="#" class="btn_primary uk-margin-small-bottom uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a></div>
-                <div class="uk-width-1-2 uk-width-medium-1-4 uk-push-1-4"><a class="btn_secondary uk-button uk-button-large uk-width-1-1" href="#" title="#">歷史</a></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- .tabBar_switcher -->
-    </div>
-  </div>
-  <div class="bg_img">
+  <div class="bg_img mt-3 mt-lg-4">
     <div class="paddingB_xlarge uk-container uk-container-center">
       <!-- <div class="uk-grid uk-grid-small" data-uk-grid-margin> -->
       <div data-uk-grid="{gutter: 20}">
         <div class="uk-width-large-2-3">
+          <div id="searchBar" class="bg_transparent border_black_opacity1 box_shadow1 uk-panel uk-panel-box">
+            <!-- <div id="searchBar" class="bg_transparent border_black_opacity1 box_shadow1 uk-panel uk-panel-box" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom', media: '(min-width: 960px)'}"> -->
+            <div class="bg_white opacity80 uk-border-rounded uk-overlay-panel"></div>
+            <div class="tabBar_switcher uk-position-relative">
+              <ul class="nav nav-tabs" id="tabBar" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="defaultSearch_tab" data-toggle="tab" href="#defaultSearch" role="tab" aria-controls="defaultSearch" aria-selected="true">簡易查詢</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="plusSearch_tab" data-toggle="tab" href="#plusSearch" role="tab" aria-controls="plusSearch" aria-selected="false">進階查詢</a>
+                </li>
+              </ul>
+              <div class="bg_white border rounded-bottom border-top-0 p-2 tab-content" id="switcher">
+                <div class="tab-pane fade show active" id="defaultSearch" role="tabpanel" aria-labelledby="defaultSearch_tab">
+                  <form class="uk-form">
+                    <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                      <div class="uk-width-xlarge-4-6">
+                        <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                          <div class="uk-width-small-2-5 uk-width-medium-3-10">
+                            <select class="uk-form-large uk-width-1-1" aria-labelledby="search">
+                              <option>不限欄位</option>
+                            </select>
+                          </div>
+                          <div class="uk-width-small-3-5 uk-width-medium-7-10">
+                            <input id="search" class="uk-form-large uk-width-1-1" type="text" placeholder="請輸入內容">
+                          </div>
+                          <!-- <div class="uk-width-small-3-10 uk-width-medium-2-10">
+                            <a href="#" class="btn_primary uk-padding-remove uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="uk-width-xlarge-2-6">
+                        <div class="uk-grid uk-grid-width-1-2 uk-grid-small" data-uk-grid-margin>
+                          <div><button class="btn_primary uk-button uk-button-large uk-width-1-1" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</button></div>
+                          <div><button type="button" class="btn_secondary uk-button uk-button-large uk-width-1-1">檢索歷史</button></div>
+                        </div>
+                      </div>
+                      <div class="uk-width-1-1">
+                        <div class="uk-form-controls">
+                          <label class="uk-margin-right">
+                            <input class="uk-margin-small-right" type="radio" name="match" checked>精確檢索</label>
+                          <label class="uk-margin-right">
+                            <input class="uk-margin-small-right" type="radio" name="match">模糊檢索</label>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="uk-form-help-block">熱門：<span class="commaCH"><a class="linkline" href="#" title="#">science</a></span><span class="commaCH"><a class="linkline" href="#" title="#">華藝</a></span><span class="commaCH"><a class="linkline" href="#" title="#">nature</a></span></p>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="plusSearch" role="tabpanel" aria-labelledby="plusSearch_tab">
+                  <div class="uk-form">
+                    <div id="search_option" class="uk-grid uk-grid-small" data-uk-grid-margin>
+                      <div class="uk-width-medium-9-10 uk-margin-small-top uk-margin-small-bottom" data-uk-alert>
+                        <div class="uk-alert">
+                          <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                            <div class="uk-width-medium-4-10">
+                              <input id="search" class="uk-form-large uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" type="text" placeholder="請輸入檢索詞">
+                            </div>
+                            <div class="uk-width-3-6 uk-width-medium-3-10">
+                              <select class="uk-form-large uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" aria-labelledby="search">
+                                <option value="不限欄位">不限欄位</option>
+                                <option value="資源名稱">資源名稱</option>
+                                <option value="資料庫平台/出版者">資料庫平台/出版者</option>
+                                <option value="資源主題">資源主題</option>
+                                <option value="ISSN/ISBN">ISSN/ISBN</option>
+                              </select>
+                            </div>
+                            <div class="option uk-width-2-6 uk-width-medium-2-10">
+                              <select class="uk-form-large uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" aria-labelledby="search">
+                                <option value="AND">AND</option>
+                                <option value="OR">OR</option>
+                                <option value="NOT">NOT</option>
+                              </select>
+                            </div>
+                            <div class="uk-width-1-6 uk-width-medium-1-10">
+                              <button class="btn_primary uk-button uk-button-large uk-padding-remove uk-alert-close uk-width-1-1 uk-margin-small-top uk-margin-small-bottom" aria-label="Close"><i class="fas fa-times" data-fa-transform="grow-2"></i></button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-width-medium-1-10 uk-margin-small-top uk-margin-small-bottom">
+                        <button id="add" class="btn_secondary uk-button uk-button-large uk-width-1-1" aria-label="add"><i class="fas fa-plus" data-fa-transform="grow-2"></i></button>
+                      </div>
+                    </div>
+                    <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                      <div class="uk-width-1-1">
+                        <div class="uk-accordion uk-margin-bottom" data-uk-accordion="{showfirst: false, collapse: false}">
+                          <button class="btn_secondary uk-accordion-title uk-button uk-button-large uk-margin-remove">查詢篩選</button>
+                          <div class="bg_grey p-2 uk-accordion-content">
+                            <div class="paddingLR_xlarge uk-position-relative">
+                              <input type="text" id="range" name="range">
+                            </div>
+                            <div class="uk-form-controls uk-margin">
+                              <label class="uk-width-1-1 uk-width-medium-1-3" for="id_lang">語　　言
+                          <select id="id_lang" class="uk-width-1-1 uk-width-medium-2-3 uk-margin-right">
+                            <option selected="selected">全部</option>
+                          </select>
+                        </label>
+                              <label class="uk-width-1-1 uk-width-medium-1-3" for="id_type">資料類型
+                          <select id="id_type" class="uk-width-1-1 uk-width-medium-2-3 uk-margin-right">
+                            <option selected="selected">全部</option>
+                          </select>
+                        </label>
+                              <label class="uk-width-1-1 uk-width-medium-1-4" for="id_watch">
+                          <input id="id_watch" class="uk-margin-small-right" name="watch" type="checkbox">只查被收藏的書目</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-width-1-2 uk-width-medium-1-4 uk-push-1-4"><a href="#" class="btn_primary uk-margin-small-bottom uk-button uk-button-large uk-width-1-1" title="Search" aria-label="submnit" aria-labelledby="search"><i class="fas fa-search uk-margin-small-right"></i>搜尋</a></div>
+                      <div class="uk-width-1-2 uk-width-medium-1-4 uk-push-1-4"><a class="btn_secondary uk-button uk-button-large uk-width-1-1" href="#" title="#">歷史</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- .tabBar_switcher -->
+          </div>
+        </div>
+        <div class="uk-width-large-1-3">
+          <div class="min_heightL200 bg_white border_black_opacity1 box_shadow1 uk-panel uk-panel-box uk-padding-remove">
+            <div class="padding_medium uk-position-relative">
+              <div class="bg_secondary rounded-top uk-overlay-panel"></div>
+              <h5 class="uk-text-contrast uk-margin-remove uk-position-relative"><i class="fas fa-file-audio uk-margin-small-right" data-fa-transform="down-2"></i>多元文化資源區圖書暨視聽資料</h5>
+            </div>
+            <div class="padding_medium">
+              <div class="uk-grid uk-grid-small" data-uk-grid-margin>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Tài nguyên đa văn hóa Sách giáo khoa và tài liệu nghe nhìn</button>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">ယဉ်ကျေးမှုပေါင်းစုံအရင်းအမြစ်များခရိုင်စာကြည့်တိုက်-cum-အသံ-အမြင်အာရုံပစ္စည်းများ</button>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Sumber Daya Multikultural Buku Distrik dan Materi Audiovisual</button>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">แหล่งข้อมูลหลากหลายวัฒนธรรมหนังสือและสื่อโสตทัศนศึกษาตำบล</button>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Multicultural Resources Mga Mga Aklat ng Distrito at Mga Materyales ng Audiovisual</button>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">ធនធានពហុវប្បធម៍សៀវភៅសិក្សានិងសោតទស្សន៍</button>
+                </div>
+                <div class="uk-width-small-1-2 uk-width-large-1-1">
+                  <button type="button" class="btn btn-light btn-sm w-100 h-100 box_shadow3">Sumber Pelbagai Budaya Buku Daerah dan Bahan Audiovisual</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- .min_heightL200 -->
+        </div>
+        <div class="uk-width-large-2-3">
           <div class="min_heightL300 bg_white border_black_opacity1 box_shadow1 uk-panel uk-panel-box uk-padding-remove">
             <div class="padding_medium uk-position-relative">
               <div class="bg_primary rounded-top uk-overlay-panel"></div>
-              <h5 class="uk-text-contrast uk-margin-remove uk-position-relative"><i class="fas fa-book uk-margin-small-right"></i>新書介紹</h5>
+              <h5 class="uk-text-contrast uk-margin-remove uk-position-relative"><i class="fas fa-book uk-margin-small-right"></i>新書資訊</h5>
             </div>
             <div class="tabBar_switcher p-2">
               <ul class="nav nav-tabs mx-1" id="tabsA" role="tablist">
@@ -305,24 +314,21 @@
                 <li class="nav-item">
                   <a class="nav-link" id="tabA2" data-toggle="tab" href="#tab_contentA2" role="tab" aria-controls="tab_contentA2" aria-selected="false">外文圖書</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" id="tabA3" data-toggle="tab" href="#tab_contentA3" role="tab" aria-controls="tab_contentA3" aria-selected="false">視聽</a>
-                </li>
               </ul>
               <div class="tab-content uk-margin" id="tab_contentA">
                 <div class="tab-pane fade show active" id="tab_contentA1" role="tabpanel" aria-labelledby="tabA1">
                   <div class="uk-slidenav-position" data-uk-slider="{autoplay: true, autoplayInterval: 10000}">
                     <!-- data-uk-slider="{autoplay: true, infinite: false}" -->
                     <div class="uk-slider-container p-1">
-                      <ul class="uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-visible-small">
+                      <ul class="ratio1_1 uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-visible-small">
                         <li>
                           <ul class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/400x533/?text=400px" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img01.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>加機天不就將，吃隊李近本跑北便信了數觀把害感出著色向客給第深國提。原格回日國海位話急照……兒位死那立流？</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>佐佐良鎮的沙耶</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -330,9 +336,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/500x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img02.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption2</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>我輩中人</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -344,9 +350,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/350x400/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img03.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption3</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>往事浮光</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -354,33 +360,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img04.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption4</span></h5>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <ul class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
-                            <li>
-                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
-                                <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/600x700/" alt="#" title="#">
-                                  <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption5</span></h5>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
-                                <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/900x1000/" alt="#" title="#">
-                                  <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption6</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>侯文詠極短篇</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -392,9 +374,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/520x640/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img05.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption7</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>時光邊緣的男人</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -402,9 +384,33 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img06.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption8</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>起源</span></h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+                            <li>
+                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
+                                <div class="borderRadius0 uk-panel uk-panel-box">
+                                  <img class="uk-width-1-1" src="img/img07.jpg" alt="#" title="#">
+                                  <div class="padding_small">
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>學生3：叫我最後一名</span></h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
+                                <div class="borderRadius0 uk-panel uk-panel-box">
+                                  <img class="uk-width-1-1" src="img/img08.jpg" alt="#" title="#">
+                                  <div class="padding_small">
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>樹上的時光</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -412,15 +418,15 @@
                           </ul>
                         </li>
                       </ul>
-                      <ul class="uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-hidden-small">
+                      <ul class="ratio1_1 uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-hidden-small">
                         <li>
                           <ul class="uk-grid uk-grid-small uk-grid-width-1-4" data-uk-grid-margin>
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/400x533/?text=400px" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img01.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>加機天不就將，吃隊李近本跑北便信了數觀把害感出著色向客給第深國提。原格回日國海位話急照……兒位死那立流？</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>佐佐良鎮的沙耶</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -428,9 +434,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/500x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img02.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption2</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>我輩中人</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -438,9 +444,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/350x400/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img03.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption3</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>往事浮光</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -448,9 +454,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img04.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption4</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>侯文詠極短篇</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -462,9 +468,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/600x700/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img05.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption5</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>時光邊緣的男人</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -472,9 +478,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/900x1000/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img06.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption6</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>起源</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -482,9 +488,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/520x640/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img07.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption7</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>學生3：叫我最後一名</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -492,9 +498,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/img08.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption8</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>樹上的時光</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -510,9 +516,6 @@
                 </div>
                 <div class="tab-pane fade" id="tab_contentA2" role="tabpanel" aria-labelledby="tabA2">
                   外文圖書
-                </div>
-                <div class="tab-pane fade" id="tab_contentA3" role="tabpanel" aria-labelledby="tabA3">
-                  視聽
                 </div>
               </div>
             </div>
@@ -557,10 +560,7 @@
                   <a class="nav-link px-2 px-md-3" id="tabB3" data-toggle="tab" href="#tab_contentB3" role="tab" aria-controls="tab_contentB3" aria-selected="false">評分</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link px-2 px-md-3" id="tabB4" data-toggle="tab" href="#tab_contentB4" role="tab" aria-controls="tab_contentB4" aria-selected="false">評論</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link px-2 px-md-3" id="tabB5" data-toggle="tab" href="#tab_contentB5" role="tab" aria-controls="tab_contentB5" aria-selected="false">引用</a>
+                  <a class="nav-link px-2 px-md-3" id="tabB5" data-toggle="tab" href="#tab_contentB4" role="tab" aria-controls="tab_contentB5" aria-selected="false">引用</a>
                 </li>
               </ul>
               <div class="tab-content uk-margin" id="tab_contentB">
@@ -568,15 +568,15 @@
                   <div class="uk-slidenav-position" data-uk-slider="{autoplay: true, autoplayInterval: 10000}">
                     <!-- data-uk-slider="{autoplay: true, infinite: false}" -->
                     <div class="uk-slider-container p-1">
-                      <ul class="uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-visible-small">
+                      <ul class="ratio1_1 uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-visible-small">
                         <li>
                           <ul class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/400x533/?text=400px" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB01.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>加機天不就將，吃隊李近本跑北便信了數觀把害感出著色向客給第深國提。原格回日國海位話急照……兒位死那立流？</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>一個木匠和他的臺灣博覽會</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -584,9 +584,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/500x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB02.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption2</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>山口，西京都的古城之美：走入日本與臺灣交錯的時空之旅</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -598,9 +598,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/350x400/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB03.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption3</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>少數說話：臺灣原住民女性文學的多重視域</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -608,33 +608,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB04.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption4</span></h5>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li>
-                          <ul class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
-                            <li>
-                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
-                                <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/600x700/" alt="#" title="#">
-                                  <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption5</span></h5>
-                                  </div>
-                                </div>
-                              </a>
-                            </li>
-                            <li>
-                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
-                                <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/900x1000/" alt="#" title="#">
-                                  <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption6</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>早安！自然選修課</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -646,9 +622,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/520x640/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB05.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption7</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>邪惡的開端：陳儀及其帶來的中國官場文化</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -656,9 +632,33 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB06.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption8</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>探索壽山. 植物篇：愛麗絲的打狗歸來</span></h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <ul class="uk-grid uk-grid-small uk-grid-width-1-2" data-uk-grid-margin>
+                            <li>
+                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
+                                <div class="borderRadius0 uk-panel uk-panel-box">
+                                  <img class="uk-width-1-1" src="img/imgB07.jpg" alt="#" title="#">
+                                  <div class="padding_small">
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>喧鬧的島嶼：臺港澳三地文化隨筆</span></h5>
+                                  </div>
+                                </div>
+                              </a>
+                            </li>
+                            <li>
+                              <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
+                                <div class="borderRadius0 uk-panel uk-panel-box">
+                                  <img class="uk-width-1-1" src="img/imgB08.jpg" alt="#" title="#">
+                                  <div class="padding_small">
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>臺北故事</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -666,15 +666,15 @@
                           </ul>
                         </li>
                       </ul>
-                      <ul class="uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-hidden-small">
+                      <ul class="ratio1_1 uk-slider uk-grid uk-grid-small uk-grid-width-1-1 uk-hidden-small">
                         <li>
                           <ul class="uk-grid uk-grid-small uk-grid-width-1-4" data-uk-grid-margin>
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/400x533/?text=400px" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB01.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>加機天不就將，吃隊李近本跑北便信了數觀把害感出著色向客給第深國提。原格回日國海位話急照……兒位死那立流？</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>一個木匠和他的臺灣博覽會</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -682,9 +682,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/500x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB02.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption2</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>山口，西京都的古城之美：走入日本與臺灣交錯的時空之旅</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -692,9 +692,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/350x400/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB03.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption3</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>少數說話：臺灣原住民女性文學的多重視域</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -702,9 +702,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB04.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption4</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>早安！自然選修課</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -716,9 +716,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/600x700/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB05.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption5</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>邪惡的開端：陳儀及其帶來的中國官場文化</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -726,9 +726,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/900x1000/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB06.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption6</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>探索壽山. 植物篇：愛麗絲的打狗歸來</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -736,9 +736,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/520x640/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB07.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption7</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>喧鬧的島嶼：臺港澳三地文化隨筆</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -746,9 +746,9 @@
                             <li>
                               <a class="border2 border_white hoverBoxShadow7 uk-width-1-1" href="#" aria-label="#" title="#">
                                 <div class="borderRadius0 uk-panel uk-panel-box">
-                                  <img class="uk-width-1-1" src="http://via.placeholder.com/420x500/" alt="#" title="#">
+                                  <img class="uk-width-1-1" src="img/imgB08.jpg" alt="#" title="#">
                                   <div class="padding_small">
-                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>Caption8</span></h5>
+                                    <h5 class="fontSize09 underline uk-text-truncate uk-margin-remove"><span>臺北故事</span></h5>
                                   </div>
                                 </div>
                               </a>
@@ -780,14 +780,7 @@
                     <div><a class="btn_primary w-100 uk-button" href="#" title="RSS"><i class="fas fa-rss uk-margin-small-right"></i>RSS</a></div>
                   </div>
                 </div>
-                <div class="tab-pane fade" id="tab_contentB4" role="tabpanel" aria-labelledby="tabB4">
-                  評論
-                  <div class="mt-2 p-1 uk-grid uk-grid-small uk-grid-width-1-2">
-                    <div><a class="btn_primary w-100 uk-button" href="#" title="More">More<i class="fas fa-angle-right uk-margin-small-left" data-fa-transform="down-2"></i></a></div>
-                    <div><a class="btn_primary w-100 uk-button" href="#" title="RSS"><i class="fas fa-rss uk-margin-small-right"></i>RSS</a></div>
-                  </div>
-                </div>
-                <div class="tab-pane fade" id="tab_contentB5" role="tabpanel" aria-labelledby="tabB5">
+                <div class="tab-pane fade" id="tab_contentB4" role="tabpanel" aria-labelledby="tabB5">
                   引用
                   <div class="mt-2 p-1 uk-grid uk-grid-small uk-grid-width-1-2">
                     <div><a class="btn_primary w-100 uk-button" href="#" title="More">More<i class="fas fa-angle-right uk-margin-small-left" data-fa-transform="down-2"></i></a></div>
