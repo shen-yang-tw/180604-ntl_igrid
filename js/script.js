@@ -49,20 +49,6 @@ $(document).ready(function() {
     prettify_enabled: false
   });
 
-  //keep aspect ratio of slider image's height to width as 4:3
-  $(".ratio4_3.uk-slider li a img").each(function() {
-    $(this).css({
-      height: $(this).width() * 4 / 3
-    });
-    // $(this).css({ height: $(this).width() * 9 / 16 });
-  });
-  $(".ratio1_1.uk-slider li a img").each(function() {
-    $(this).css({
-      height: $(this).width() * 1
-    });
-    // $(this).css({ height: $(this).width() * 9 / 16 });
-  });
-
   //remove self after show .listMore
   $(".btnMore").click(function() {
     $(this).parent().siblings(".listMore").removeClass("uk-hidden");
@@ -99,29 +85,6 @@ $(document).ready(function() {
   //listTabs remove .uk-active as click to close tabs
   $(".listTabs .uk-nav>li.uk-open").click(function() {
     $(this).removeClass("uk-active");
-  });
-
-  //keep aspect ratio of slider image's height to width as 4:3
-  $(".ratio4_3 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 4 / 3
-    });
-    // $(this).css({ height: $(this).width() * 9 / 16 });
-  });
-  $(".uk-switcher .ratio4_3 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 2
-    });
-  });
-  $(".ratio5_4 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 5 / 4
-    });
-  });
-  $(".ratio1_1 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 1
-    });
   });
 
   //rate
@@ -216,7 +179,46 @@ $(document).ready(function() {
   //uk-accordion show uk-accordion-title when not empty
   $(".uk-accordion .uk-accordion-content>.uk-panel").find(".checkEmpty:not(:empty)").closest(".uk-accordion").children(".uk-accordion-title").removeClass("uk-hidden");
 
+  //Set Height of Slider & Width of Images
+  $("#tabsA>li,#tabsB>li").click(function() {
+    var height_Slider = $(this).parent().siblings().children(".active").find(".uk-slider:visible").height();
+    var width_img = $(this).parent().siblings().children(".active").find(".uk-slider:visible").children("li").find(".uk-panel").children("img").width();
+    $(this).parent().siblings().children().find(".uk-slider").css('min-height', height_Slider);
+    $(this).parent().siblings().children().find(".uk-slider").children("li").find(".uk-panel").children("img").height(width_img);
+  });
+  $(window).on('resize', function() {
+    location.reload();
+  });
+
 });
+
+//the browser window resize
+$(window).on("resize load", function() {
+  //keep aspect ratio of slider image's height to width as 4:3
+  $(".ratio4_3 li img").each(function() {
+    $(this).css({
+      height: $(this).width() * 4 / 3
+    });
+    // $(this).css({ height: $(this).width() * 9 / 16 });
+  });
+  $(".uk-switcher .ratio4_3 li img").each(function() {
+    $(this).css({
+      height: $(this).width() * 2
+    });
+  });
+  $(".ratio5_4 li img").each(function() {
+    $(this).css({
+      height: $(this).width() * 5 / 4
+    });
+  });
+  $(".ratio1_1 li img").each(function() {
+    $(this).css({
+      height: $(this).width() * 1
+    });
+  });
+
+});
+
 
 UIkit.on('beforeready.uk.dom', function() {
   var hash = document.location.hash;
