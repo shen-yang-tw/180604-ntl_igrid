@@ -197,18 +197,13 @@ $(window).on("resize load", function() {
   //keep aspect ratio of slider image's height to width as 4:3
   $(".ratio4_3 li img").each(function() {
     $(this).css({
-      height: $(this).width() * 4 / 3
+      height: $(this).width() * 3 / 4
     });
     // $(this).css({ height: $(this).width() * 9 / 16 });
   });
-  $(".uk-switcher .ratio4_3 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 2
-    });
-  });
   $(".ratio5_4 li img").each(function() {
     $(this).css({
-      height: $(this).width() * 5 / 4
+      height: $(this).width() * 4 / 5
     });
   });
   $(".ratio1_1 li img").each(function() {
