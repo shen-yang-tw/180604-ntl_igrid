@@ -1,3 +1,8 @@
 Assets/
+Assets/*
 *.psd
+*.ai
 *.zip
+*複製.html
+*old.html
+*-i.html
