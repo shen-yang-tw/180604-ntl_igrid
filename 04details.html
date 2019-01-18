@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="top" class="bg_lightGrey index">
+<body id="top" class="bg_lightGrey page">
   <div class="gotoTop" data-uk-sticky="{top:-250, animation: 'uk-animation-slide-top'}"><a href="#top" title="Go to top"><i class="fas fa-chevron-up"></i></a></div>
   <header id="header" data-uk-sticky="{top:-50, animation: 'uk-animation-slide-bottom'}">
     <div class="uk-position-relative">
@@ -139,7 +139,7 @@
       <img class="uk-invisible" src="img/blank.gif" alt="">
     </div>
   </div>
-  <div class="mt-2 mt-md-4 uk-container uk-container-center">
+  <div class="mt-2 mt-md-4 uk-container uk-container-center uk-hidden-small">
     <div class="uk-position-relative">
       <ul class="uk-breadcrumb">
         <li><a href="#">首頁</a></li>
@@ -149,16 +149,16 @@
     </div>
   </div>
   <div class="bg_img">
-    <div class="paddingB_xlarge uk-container uk-container-center">
-      <div class="box_shadow1 bg-white uk-panel uk-panel-box">
+    <div class="pt-0 uk-container uk-container-center">
+      <div class="p-2 p-lg-3 box_shadow1 bg-white uk-panel uk-panel-box">
         <div class="min_heightL600">
           <div class="uk-grid uk-grid-large" data-uk-grid-margin>
-            <div class="uk-width-small-1-4 uk-width-medium-1-5 uk-width-large-1-6">
+            <div class="uk-width-1-4 uk-width-medium-1-5 uk-width-large-1-6">
               <img class="w-100 mb-3" src="https://fakeimg.pl/300x350/" alt="#">
               <img class="w-100 mb-3" src="https://fakeimg.pl/350x350/?text=QRCode" alt="#">
             </div>
-            <div class="uk-width-small-3-4 uk-width-medium-4-5 uk-width-large-5-6">
-              <div class="uk-margin">
+            <div class="uk-width-3-4 uk-width-medium-4-5 uk-width-large-5-6">
+              <div class="uk-margin uk-hidden-small">
                 <div class="uk-button-group">
                   <button class="uk-button" data-uk-toggle="{target:'.toggle'}"><span class="toggle"><i class="fas fa-heart fa-fw"></i>收藏</span><span class="toggle uk-hidden"><i class="far fa-heart fa-fw"></i>取消收藏</span></button>
                   <button class="uk-button" data-uk-modal="{target:'#save', center:true}"><i class="fas fa-save fa-fw"></i>儲存</button>
@@ -173,15 +173,15 @@
                   <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-envelope fa-fw"></i><span title="轉寄">123</span></span>
                 </div>
               </div>
-              <p class="urlFix my-2">資料來源 <a class="color_primary" href="#">Findbook</a></p>
+              <p class="urlFix my-2">資料來源 <a class="color_primary" href="#">Findbook</a><a class="mt-2 mr-1 uk-visible-small uk-position-top-right" href="#email" data-uk-modal="{center:true}"><i class="color_defaultGrey fas fa-envelope fa-fw fa-2x"></i></a></p>
               <h4 class="p-2 my-2 bg-light text-dark">Python3.5技術手冊</h4>
               <div class="rate mb-2">評分：
                 <span class="rateScore mr-2">0</span>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分1"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分2"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分3"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分4"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-1" title="評分5"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分1"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分2"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分3"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分4"><i class="fas fa-star fa-fw"></i></button>
+                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分5"><i class="fas fa-star fa-fw"></i></button>
                 <!-- <a class="cancelRate hover_color_primary text-black-50 p-1" href="#" title="取消評分"><i class="far fa-times-circle"></i></a>
                 <a class="hover_color_primary text-black-50 p-1" href="#" title="評分1"><i class="fas fa-star fa-fw"></i></a>
                 <a class="hover_color_primary text-black-50 p-1" href="#" title="評分2"><i class="fas fa-star fa-fw"></i></a>
@@ -316,7 +316,7 @@
             </div>
             <div class="text-center border-0 rounded-0 uk-accordion-title uk-hidden"><i class="uk-icon-chevron-down"></i></div>
           </div>
-          <div class="uk-margin-large">
+          <div class="mt-2 mt-lg-4">
             <h4>相關作品</h4>
             <ul class="uk-tab" data-uk-tab="{connect:'#books'}">
               <li class="uk-active"><a href="#">Tab1</a></li>
@@ -324,7 +324,7 @@
             </ul>
             <ul id="books" class="uk-switcher uk-margin">
               <li>
-                <ul class="ratio4_3 uk-grid uk-grid-small uk-grid-width-small-1-4 uk-grid-width-medium-1-5 uk-grid-width-xlarge-1-6" data-uk-grid-margin>
+                <ul class="ratio4_3 uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-small-1-4 uk-grid-width-medium-1-5 uk-grid-width-xlarge-1-6" data-uk-grid-margin>
                   <li>
                     <a class="w-100 uk-thumbnail" href="#">
                       <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
@@ -358,7 +358,7 @@
                 </ul>
               </li>
               <li>
-                <ul class="ratio4_3 uk-grid uk-grid-small uk-grid-width-small-1-4 uk-grid-width-medium-1-5 uk-grid-width-xlarge-1-6" data-uk-grid-margin>
+                <ul class="ratio4_3 uk-grid uk-grid-small uk-grid-width-1-2 uk-grid-width-small-1-4 uk-grid-width-medium-1-5 uk-grid-width-xlarge-1-6" data-uk-grid-margin>
                   <li>
                     <a class="w-100 uk-thumbnail" href="#">
                       <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
@@ -393,7 +393,7 @@
               </li>
             </ul>
           </div>
-          <div class="uk-margin-large">
+          <div class="mt-2 mt-lg-4">
             <ul class="uk-tab" data-uk-tab="{connect:'#switcher'}">
               <li class="uk-active"><a href="#">內容</a></li>
               <li><a href="#">評論</a></li>
@@ -417,11 +417,6 @@
                   <textarea id="comment" class="w-100 mb-2" cols="30" rows="5" placeholder="請輸入評論"></textarea>
                   <button class="btn_comment btn_primary uk-button" type="button"><i class="mr-1 fas fa-pen-fancy"></i>儲存評論</button>
                 </form>
-                <div class="editable d-inline-block uk-form">
-                  <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
-                  <div class="text_area" title="請點擊筆形按鈕輸入標籤">請點擊筆形按鈕輸入標籤</div>
-                  <input class="text_input" type="text" value="請點擊筆形按鈕輸入標籤">
-                </div>
               </li>
             </ul>
           </div>

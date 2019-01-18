@@ -15,23 +15,23 @@ $(document).ready(function() {
   $("p:empty, h1:empty, h2:empty, h3:empty, h4:empty, h5:empty, h6:empty").remove();
 
   //for Plus Search page
-  $("#search_option>div:nth-child(2)").after($("#search_option>div:first").clone().removeClass('uk-row-first'));
-  $("#search_option [data-uk-alert]:last .option").remove();
-  $("#search_option>div:first button").removeClass('uk-alert-close');
-  $("#add").click(function() {
+  $(".search_option>div:last").after($(".search_option>div:first").clone().removeClass('uk-row-first'));
+  $(".search_option [data-uk-alert]:last .option").remove();
+  $("#addBtn, #addBtn_mobile").click(function() {
     //button #add cannot place in <form> or not working
-    var counter = $("#search_option>div").length;
-    $("#search_option>div:first button").addClass('uk-alert-close');
-    var newSearch = $("#search_option>div:first").clone().removeClass('uk-row-first');
+    var counter = $(this).parent().parent().children().length;
+    $(this).parent().siblings().not(":first").find("button").addClass('uk-alert-close');
+    var newSearch = $(this).parent().parent().children(":first").clone().removeClass('uk-row-first');
+    newSearch.children().children().children(":first").children("input").val("");
+    newSearch.find("button").addClass('uk-alert-close');
+    
     if (counter < 6) {
-      if (counter < 3) {
-        $("#search_option>div:first button").removeClass('uk-alert-close');
-      }
-      $("#search_option>div:nth-child(2)").after(newSearch);
-      $("#search_option [data-uk-alert]:last .option").remove();
+      // if (counter < 3) {}
+      //   $(this).parent().parent().children(":first button").removeClass('uk-alert-close');
+      // }
+      $(this).parent().parent().children(":nth-child(2)").after(newSearch);
+      $(this).parent().parent().children("[data-uk-alert]:last .option").remove();
     }
-    $("#search_option>div:first button").removeClass('uk-alert-close');
-    // $("#searchBar").parent().height($("#searchBar").height() + 30); //for sicky
   });
 
   //rangeSlider
@@ -60,26 +60,36 @@ $(document).ready(function() {
     // $('.checkAllB').prop('checked', this.checked);
     $('.listCheckB').prop('checked', this.checked);
     $('[aria-hidden="true"] .listCheckB').prop('checked', false);
-    $("#checkedNumber").text($('input.listCheckB:checked').length);
+    $("#checkedNumber, .checkedNumber").text($('input.listCheckB:checked').length);
+    console.log($('input.listCheckB:checked').length);
   });
   $(".uncheckAllB").click(function() {
     $('.listCheckB').prop('checked', false);
     $('.checkAllB').prop('checked', false);
-    $("#checkedNumber").text($('input.listCheckB:checked').length);
+    $("#checkedNumber, .checkedNumber").text($('input.listCheckB:checked').length);
   });
   $(".listCheckB").click(function() {
-    $("#checkedNumber").text($('input.listCheckB:checked').length);
+    if ($(this).is(':checked')) {
+      $(this).prop('checked', true);
+      if ($('.listCheckB:checked').length == $('.listCheckB').length) {
+        $('.checkAllB').prop('checked', true);
+      }
+    } else {
+      $(this).prop('checked', false);
+      $('.checkAllB').prop('checked', false);
+    }
+    $("#checkedNumber, .checkedNumber").text($('input.listCheckB:checked').length);
   });
   $(".sort>li:not(:first-child)>a").click(function() {
     $('[data-uk-grid]').on('beforeupdate.uk.grid', function() {
       $('[aria-hidden="true"] .listCheckB').prop('checked', false);
       $('.checkAllB').prop('checked', false);
-      $("#checkedNumber").text($('input.listCheckB:checked').length);
+      $("#checkedNumber, .checkedNumber").text($('input.listCheckB:checked').length);
     });
   });
   $(".deleteAll").click(function() {
     $(".listCheckB:checked").prev().trigger("click");
-    $("#checkedNumber").text("0");
+    $("#checkedNumber, .checkedNumber").text("0");
   });
 
   //listTabs remove .uk-active as click to close tabs
@@ -160,7 +170,7 @@ $(document).ready(function() {
     $(".listCheckB:checked").parent().parent().attr("data-uk-filter", "新標籤");
     $("#sortTabs>button").prev().attr("data-uk-filter", "新標籤").trigger("click");
     $(".listCheckB:checked").prop('checked', false);
-    $("#checkedNumber").text("0");
+    $("#checkedNumber, .checkedNumber").text("0");
   });
   $(".tag_btn .uk-alert-close").click(function() {
     var tagName = $(this).next().children("label").children("a").html();
