@@ -39,7 +39,7 @@
           <img class="uk-invisible" src="img/blank.gif" alt="#" title="#">
         </div>
       </div>
-      <div class="uk-position-relative">
+      <div class="uk-position-relative  uk-visible-large">
         <div class="bg_primary opacity90 uk-overlay-panel uk-padding-remove"></div>
         <nav class="uk-container uk-container-center uk-position-relative uk-position-z-index">
           <ul class="topList list_horizontal list_line color_white uk-text-center">
@@ -67,6 +67,11 @@
           <div id="offcanvas" class="uk-offcanvas">
             <nav class="uk-offcanvas-bar bg_primary">
               <ul class="uk-nav uk-nav-offcanvas uk-text-contrast" data-uk-nav>
+                <li><a href="#" title="#">圖書館</a></li>
+                <li><a href="#" title="#">首頁</a></li>
+                <li><a href="#" title="#">English</a></li>
+                <li><a href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle uk-margin-small-right"></i>登入</a></li>
+                <li class="uk-nav-divider"></li>
                 <li class="uk-parent">
                   <a href="#">全部館藏</a>
                   <ul class="uk-nav-sub">
@@ -154,8 +159,9 @@
         <div class="min_heightL600">
           <div class="uk-grid uk-grid-large" data-uk-grid-margin>
             <div class="uk-width-1-4 uk-width-medium-1-5 uk-width-large-1-6">
-              <img class="w-100 mb-3" src="https://fakeimg.pl/300x350/" alt="#">
-              <img class="w-100 mb-3" src="https://fakeimg.pl/350x350/?text=QRCode" alt="#">
+              <img class="w-100" src="https://fakeimg.pl/300x350/" alt="#">
+              <p class="urlFix my-1">資料來源 <a class="color_primary" href="#">Findbook</a></p>
+              <img class="w-100 uk-visible-large" src="https://fakeimg.pl/350x350/?text=QRCode" alt="#">
             </div>
             <div class="uk-width-3-4 uk-width-medium-4-5 uk-width-large-5-6">
               <div class="uk-margin uk-hidden-small">
@@ -173,65 +179,56 @@
                   <span class="mr-2 uk-text-small"><i class="text-black-50 fas fa-envelope fa-fw"></i><span title="轉寄">123</span></span>
                 </div>
               </div>
-              <p class="urlFix my-2">資料來源 <a class="color_primary" href="#">Findbook</a><a class="mt-2 mr-1 uk-visible-small uk-position-top-right" href="#email" data-uk-modal="{center:true}"><i class="color_defaultGrey fas fa-envelope fa-fw fa-2x"></i></a></p>
-              <h4 class="p-2 my-2 bg-light text-dark">Python3.5技術手冊</h4>
-              <div class="rate mb-2">評分：
-                <span class="rateScore mr-2">0</span>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分1"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分2"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分3"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分4"><i class="fas fa-star fa-fw"></i></button>
-                <button class="cursor_pointer border-0 bg-transparent text-black-50 p-0 p-sm-1" title="評分5"><i class="fas fa-star fa-fw"></i></button>
-                <!-- <a class="cancelRate hover_color_primary text-black-50 p-1" href="#" title="取消評分"><i class="far fa-times-circle"></i></a>
-                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分1"><i class="fas fa-star fa-fw"></i></a>
-                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分2"><i class="fas fa-star fa-fw"></i></a>
-                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分3"><i class="fas fa-star fa-fw"></i></a>
-                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分4"><i class="fas fa-star fa-fw"></i></a>
-                <a class="hover_color_primary text-black-50 p-1" href="#" title="評分5"><i class="fas fa-star fa-fw"></i></a> -->
-              </div>
+              <h4 class="p-2 mt-0 mb-2 my-lg-2 bg-light text-dark">Python3.5技術手冊</h4>
               <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">作者</span><a class="color_primary" href="#">林信良 著</a></div>
               <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">出版</span><a class="color_primary" href="#">臺北市 : 碁峰資訊股份有限公司發行 2016.07</a></div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">版本</span>初版</div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">標題</span><a class="color_primary" href="#">Python(電腦程式語言)</a></div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">ISBN</span>9789864761265 (平裝)</div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">下載</span><a class="color_primary" href="#">範例下載</a></div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">書目註</span>含附錄</div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">系統號</span>000034888</div>
-              <div class="urlFix mb-2">
-                <div class="tag uk-flex uk-flex-wrap">
-                  <div>
-                    <span class="border border-secondary px-2 mr-2 mb-2">讀者標籤</span>
-                  </div>
-                  <div class="newTag mr-2 uk-hidden" data-uk-alert>
-                    <div class="mb-2 py-2 d-inline-block uk-alert">
-                      <a class="uk-alert-close uk-close" href="#" title="刪除"></a>
-                      <div class="editable d-inline-block uk-form">
-                        <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
-                        <label class="text_label mb-0 mr-2 d-inline-block" title="請點擊筆形按鈕輸入標籤"><a class="linkline" href="#">請點擊筆形按鈕輸入標籤</a></label>
-                        <input class="text_input" type="text" value="請點擊筆形按鈕輸入標籤">
+              <div class="my-2 uk-flex uk-flex-middle uk-flex-space-between uk-margin uk-hidden-large">
+                <div class="uk-width-1-1"><button class="w-100 uk-button" data-uk-toggle="{target:'.more'}"><span class="more"><i class="uk-icon-justify uk-icon-angle-double-down"></i></span><span class="more uk-hidden"><i class="uk-icon-justify uk-icon-angle-double-up"></i></span></button></div>
+                <div><a class="ml-2" href="#email" data-uk-modal="{center:true}"><i class="color_defaultGrey fas fa-envelope fa-fw fa-2x"></i></a></div>
+              </div>
+              <div class="more visible_large uk-hidden">
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">版本</span>初版</div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">標題</span><a class="color_primary" href="#">Python(電腦程式語言)</a></div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">ISBN</span>9789864761265 (平裝)</div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">下載</span><a class="color_primary" href="#">範例下載</a></div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">書目註</span>含附錄</div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">系統號</span>000034888</div>
+                <div class="urlFix mb-2">
+                  <div class="tag uk-flex uk-flex-wrap">
+                    <div>
+                      <span class="border border-secondary px-2 mr-2 mb-2">讀者標籤</span>
+                    </div>
+                    <div class="newTag mr-2 uk-hidden" data-uk-alert>
+                      <div class="mb-2 py-2 d-inline-block uk-alert">
+                        <a class="uk-alert-close uk-close" href="#" title="刪除"></a>
+                        <div class="editable d-inline-block uk-form">
+                          <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
+                          <label class="text_label mb-0 mr-2 d-inline-block" title="請點擊筆形按鈕輸入標籤"><a class="linkline" href="#">請點擊筆形按鈕輸入標籤</a></label>
+                          <input class="text_input" type="text" value="請點擊筆形按鈕輸入標籤">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="mr-2" data-uk-alert>
-                    <div class="mb-2 py-2 d-inline-block uk-alert">
-                      <a class="uk-alert-close uk-close" href="#" title="刪除"></a>
-                      <div class="editable d-inline-block uk-form">
-                        <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
-                        <label class="text_label mb-0 mr-2 d-inline-block" title="請點擊筆形按鈕修改標籤"><a class="linkline" href="#">123</a></label>
-                        <input class="text_input" type="text" value="123">
+                    <div class="mr-2" data-uk-alert>
+                      <div class="mb-2 py-2 d-inline-block uk-alert">
+                        <a class="uk-alert-close uk-close" href="#" title="刪除"></a>
+                        <div class="editable d-inline-block uk-form">
+                          <button class="edit color_primary border-0 bg-transparent uk-button" title="點擊編輯"><i class="fas fa-pen" data-fa-transform="up-2"></i></button>
+                          <label class="text_label mb-0 mr-2 d-inline-block" title="請點擊筆形按鈕修改標籤"><a class="linkline" href="#">123</a></label>
+                          <input class="text_input" type="text" value="123">
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <button id="btn_add" class="btn_primary uk-button" type="button" aria-label="新增標籤" title="新增標籤"><i class="fas fa-plus"></i></button>
+                    <div>
+                      <button id="btn_add" class="btn_primary uk-button" type="button" aria-label="新增標籤" title="新增標籤"><i class="fas fa-plus"></i></button>
+                    </div>
                   </div>
                 </div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">連結</span><a class="color_primary" href="#">webpac.nhri.org.tw/webpac/detail/324045/?index=1</a></div>
+                <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">目前引用數</span>1</div>
               </div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">連結</span><a class="color_primary" href="#">webpac.nhri.org.tw/webpac/detail/324045/?index=1</a></div>
-              <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">目前引用數</span>1</div>
             </div>
           </div>
-          <div class="mt-4 p-0 uk-panel uk-panel-box uk-panel-box-secondary uk-accordion" data-uk-accordion="{showfirst: false}">
+          <div class="mt-lg-4 p-0 uk-panel uk-panel-box uk-panel-box-secondary uk-accordion" data-uk-accordion="{showfirst: false}">
             <div class="px-2 pt-2 pb-0">
               <div class="mb-2 uk-panel uk-panel-box">
                 <div class="uk-grid uk-grid-small uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-5" data-uk-grid-margin>
