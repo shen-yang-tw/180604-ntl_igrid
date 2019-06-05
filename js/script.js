@@ -1,9 +1,3 @@
-// fix 100 vh in Android Chrome
-var vhFix = new VHChromeFix([{
-  selector: '.fullViewH',
-  vh: 100
-}]);
-
 $(document).ready(function() {
 
   //Get current year
@@ -197,29 +191,6 @@ $(document).ready(function() {
     $(this).parent().siblings().children().find(".uk-slider").children("li").find(".uk-panel").children("img").height(width_img);
   });
 });
-
-//the browser window resize
-$(window).on("resize load", function() {
-  //keep aspect ratio of slider image's height to width as 4:3
-  $(".ratio4_3 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 3 / 4
-    });
-    // $(this).css({ height: $(this).width() * 9 / 16 });
-  });
-  $(".ratio5_4 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 4 / 5
-    });
-  });
-  $(".ratio1_1 li img").each(function() {
-    $(this).css({
-      height: $(this).width() * 1
-    });
-  });
-
-});
-
 
 UIkit.on('beforeready.uk.dom', function() {
   var hash = document.location.hash;
