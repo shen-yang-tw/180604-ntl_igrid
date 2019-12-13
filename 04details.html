@@ -64,33 +64,6 @@
             </div>
           </div>
           <!-- #logoMenuBar -->
-          <div id="offcanvas" class="uk-offcanvas">
-            <nav class="uk-offcanvas-bar bg_primary">
-              <ul class="uk-nav uk-nav-offcanvas uk-text-contrast" data-uk-nav>
-                <li><a href="#" title="#">圖書館</a></li>
-                <li><a href="#" title="#">首頁</a></li>
-                <li><a href="#" title="#">English</a></li>
-                <li><a href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle uk-margin-small-right"></i>登入</a></li>
-                <li class="uk-nav-divider"></li>
-                <li class="uk-parent">
-                  <a href="#">全部館藏</a>
-                  <ul class="uk-nav-sub">
-                    <li><a href="#">Item1</a></li>
-                    <li><a href="#">Item1</a></li>
-                  </ul>
-                </li>
-                <li class="uk-parent"><a href="#">期刊資料</a></li>
-                <li class="uk-parent"><a href="#">親子資料</a></li>
-                <li class="uk-parent"><a href="#">視聽資料</a></li>
-                <li class="uk-parent"><a href="#">臺灣資料</a></li>
-                <li class="uk-parent"><a href="#">微縮資料</a></li>
-                <li class="uk-parent"><a href="#">新書資訊</a></li>
-                <li class="uk-parent"><a href="#">熱門排行</a></li>
-                <li class="uk-parent"><a href="#">個人紀錄/續借</a></li>
-              </ul>
-            </nav>
-          </div>
-          <!-- #offcanvas -->
         </div>
         <hr class="border_white_opacity3 uk-margin-remove uk-position-relative">
         <div class="menuBar uk-position-relative uk-width-1-1">
@@ -139,6 +112,33 @@
     </div>
   </header>
   <!-- header -->
+  <div id="offcanvas" class="uk-offcanvas">
+    <nav class="uk-offcanvas-bar bg_primary">
+      <ul class="uk-nav uk-nav-offcanvas uk-text-contrast" data-uk-nav>
+        <li><a href="#" title="#">圖書館</a></li>
+        <li><a href="#" title="#">首頁</a></li>
+        <li><a href="#" title="#">English</a></li>
+        <li><a href="#login" title="登入" data-uk-modal="{center:true}"><i class="fas fa-user-circle uk-margin-small-right"></i>登入</a></li>
+        <li class="uk-nav-divider"></li>
+        <li class="uk-parent">
+          <a href="#">全部館藏</a>
+          <ul class="uk-nav-sub">
+            <li><a href="#">Item1</a></li>
+            <li><a href="#">Item1</a></li>
+          </ul>
+        </li>
+        <li class="uk-parent"><a href="#">期刊資料</a></li>
+        <li class="uk-parent"><a href="#">親子資料</a></li>
+        <li class="uk-parent"><a href="#">視聽資料</a></li>
+        <li class="uk-parent"><a href="#">臺灣資料</a></li>
+        <li class="uk-parent"><a href="#">微縮資料</a></li>
+        <li class="uk-parent"><a href="#">新書資訊</a></li>
+        <li class="uk-parent"><a href="#">熱門排行</a></li>
+        <li class="uk-parent"><a href="#">個人紀錄/續借</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- #offcanvas -->
   <div class="uk-position-relative">
     <div class="opacity10 uk-overlay-panel uk-cover-background" style="height: 600px; background-image: url(img/bg.jpg);">
       <img class="uk-invisible" src="img/blank.gif" alt="">
@@ -223,9 +223,11 @@
                 <div class="urlFix mb-2"><span class="border border-secondary px-2 mr-2">目前引用數</span>1</div>
               </div>
               <div class="mt-2 mb-0 uk-flex uk-flex-wrap uk-flex-middle uk-margin uk-hidden-large">
-                <div class="mb-1 uk-width-1-1"><button class="w-100 uk-button" data-uk-toggle="{target:'.more'}"><span class="more"><i class="uk-icon-justify uk-icon-angle-double-down"></i></span><span class="more uk-hidden"><i class="uk-icon-justify uk-icon-angle-double-up"></i></span></button></div>
-                <div class="mb-1"><button class="uk-button" data-uk-toggle="{target:'.toggle'}"><span class="toggle"><i class="fas fa-heart fa-fw"></i>收藏</span><span class="toggle uk-hidden"><i class="far fa-heart fa-fw"></i>取消收藏</span></button></div>
-                <div class="mb-1"><a class="ml-2" href="#email" data-uk-modal="{center:true}"><i class="color_defaultGrey fas fa-envelope fa-fw fa-2x"></i></a></div>
+                <div class="mb-1 uk-width-1-1"><button class="w-100 mb-2 uk-button" data-uk-toggle="{target:'.more'}"><span class="more"><i class="uk-icon-justify uk-icon-angle-double-down"></i></span><span class="more uk-hidden"><i class="uk-icon-justify uk-icon-angle-double-up"></i></span></button></div>
+                <div class="mb-1"><button class="uk-button mr-2" data-uk-toggle="{target:'.toggle'}"><span class="toggle"><i class="fas fa-heart fa-fw"></i>收藏</span><span class="toggle uk-hidden"><i class="far fa-heart fa-fw"></i>取消收藏</span></button></div>
+                <div class="mb-1"><button class="uk-button mr-2" data-uk-modal="{target:'#save', center:true}"><i class="fas fa-save fa-fw"></i>儲存</button></div>
+                <div class="mb-1"><button class="uk-button mr-2" data-uk-modal="{target:'#print', center:true}"><i class="fas fa-print fa-fw"></i>列印</button></div>
+                <div class="mb-1"><a class="mr-2" href="#email" data-uk-modal="{center:true}"><i class="color_defaultGrey fas fa-envelope fa-fw fa-2x"></i></a></div>
               </div>
             </div>
           </div>
