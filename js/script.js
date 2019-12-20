@@ -11,8 +11,9 @@ $(document).ready(function() {
   //for Plus Search page
   $(".search_option>div:last").after($(".search_option>div:first").clone().removeClass('uk-row-first'));
   $(".search_option [data-uk-alert]:last .option").remove();
-  $("#addBtn, #addBtn_mobile").click(function() {
-    //button #add cannot place in <form> or not working
+  $("#search_option [data-uk-alert]:first [aria-label='Close']").removeClass('uk-alert-close');
+  $("[aria-label='add']").click(function() {
+    //button #add cannot be present in <form> or not working
     var counter = $(this).parent().parent().children().length;
     $(this).parent().siblings().not(":first").find("button").addClass('uk-alert-close');
     var newSearch = $(this).parent().parent().children(":first").clone().removeClass('uk-row-first');
